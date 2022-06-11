@@ -1,0 +1,14 @@
+.saves-view .container{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.saves-view .empty{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.saves-view a{
+    font-size: 18px;
+    font-weight: bold;
+}

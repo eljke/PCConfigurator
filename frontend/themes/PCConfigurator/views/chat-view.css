@@ -1,0 +1,98 @@
+.chat-view .user-info-input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.chat-view .user-info-input-container-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.chat-view .input-user-name:required{
+    background: red;
+    margin: auto;
+}
+
+.chat-view .login-title{
+    margin-top: 20%;
+    font-size: larger;
+}
+
+.chat-view .input-user-name-login{
+    margin: auto;
+}
+
+.chat-view .confirm-info-input-login{
+    background: #36485f;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.chat-view .already-have-an-account{
+    font-size: 10px;
+    margin: auto;
+}
+
+.chat-view .already-have-an-account:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.chat-view .confirm-info-input {
+    background: #36485f;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.chat-view .registration-title{
+    font-size: larger;
+    margin: auto;
+}
+
+.chat-view .pass-and-check{
+    display: inline-block;
+    margin: auto;
+}
+
+.chat-view .email-and-check{
+    display: inline-block;
+}
+
+.chat-view .username-and-check{
+    display: inline-block;
+    margin: auto;
+}
+
+.chat-view .check-icon{
+    color: green;
+}
+
+.chat-view .confirm-info-input:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#helper-vaadin-password-field-2{
+    width: 270px;
+    margin: auto;
+}
+
+.chat-view .confirm-info-input-login:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.chat-view .send-field {
+    width: 40%;
+}
+
+.chat-view input,
+.chat-view .input-user-name::-webkit-input-placeholder,
+.chat-view .input-email::-webkit-input-placeholder,
+.chat-view .input-password::-webkit-input-placeholder{
+    font-size: 15px;
+}

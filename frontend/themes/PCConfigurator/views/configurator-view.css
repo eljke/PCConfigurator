@@ -1,0 +1,238 @@
+.configurator-view {
+  display: block;
+  height: 100%;
+}
+
+.configurator-view vaadin-grid {
+  height: 100%;
+  line-height: var(--lumo-line-height-m);
+}
+
+.configurator-view vaadin-grid,
+.configurator-view vaadin-grid-cell-content {
+  background-color: var(--lumo-contrast-10pct);
+}
+
+.configurator-view .card {
+  background-color: var(--lumo-base-color);
+  border-radius: var(--lumo-border-radius);
+  box-shadow: var(--lumo-box-shadow-xs);
+  padding: calc(var(--lumo-space-s) * 1.5) var(--lumo-space-m);
+  user-select: none;
+}
+
+.configurator-view img {
+  flex-shrink: 0;
+}
+
+.configurator-view .tooltip {
+  font-size: 9px;
+}
+
+.configurator-view .image{
+  height: var(--lumo-size-xl);
+  width: var(--lumo-size-xl);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.configurator-view .modelImage {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  mix-blend-mode: multiply;
+  max-height: 90%;
+  max-width: 90%;
+  object-fit: cover;
+  object-position: center center;
+
+}
+
+.configurator-view .modelImageHolder {
+  margin-right: 1%;
+  margin-left: 1%;
+  height: 212px;
+  width: 20%;
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 4px;
+}
+
+.configurator-view .componentDescription{
+  font-weight: normal;
+  opacity: 0.8;
+}
+
+.configurator-view .header {
+  align-items: baseline;
+}
+
+.configurator-view .name {
+  font-size: var(--lumo-font-size-xxl);
+  font-weight: bold;
+  margin-right: var(--lumo-space-s);
+}
+
+.configurator-view .needful {
+  color: var(--lumo-tertiary-text-color);
+  font-weight: 100;
+  font-size: var(--lumo-font-size-xxs);
+}
+
+.configurator-view .post {
+  color: var(--lumo-secondary-text-color);
+  font-size: var(--lumo-font-size-s);
+  margin-bottom: var(--lumo-space-s);
+  white-space: normal;
+}
+
+.configurator-view .model:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.configurator-view .shortDescription{
+  width: 100%;
+  height: auto;
+  word-break: break-word;
+  white-space: pre;
+}
+
+.configurator-view .selectMenu{
+  overflow-y: auto;
+}
+
+.configurator-view .filtersContainer{
+  display: inline-flex;
+}
+
+.configurator-view .search{
+  margin-left: 100%;
+}
+
+.configurator-view .shortInfo:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.configurator-view .scrollPlace {
+  width: 100%;
+}
+
+.configurator-view .scroller {
+  width: 100%;
+}
+
+.configurator-view .modelCard {
+  align-items: center;
+  background: rgb(39, 56, 78);
+  border: 4px groove rgb(78, 120, 174);
+  border-radius: 8px;
+  height: 32%;
+}
+
+.configurator-view .modelInfoFooter {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.configurator-view .price {
+  margin-top: auto;
+}
+
+.configurator-view .addModelButton {
+
+}
+
+.configurator-view .actions {
+  align-items: center;
+}
+
+.configurator-view .savesContainer{
+  display: inherit;
+}
+
+.configurator-view .gridFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 1%;
+  height: 4.5%;
+  border-top: 1px solid;
+  border-color:  var(--lumo-contrast-10pct);
+}
+
+.configurator-view .saveScreenButtonContainer{
+  display: flex;
+}
+
+.configurator-view .enterConfigurationName{
+  margin-left: 1.25%;
+  height: 75%;
+}
+
+.configurator-view .saveEnteredConfigurationName{
+  margin-left: 1.25%;
+  margin-top: 1.5%;
+  height: 90%;
+}
+
+.configurator-view .saveScreenButton{
+  height: 80%;
+  width: 180px;
+  margin-left: 1.25%;
+}
+
+.configurator-view .getSavesButton {
+  height: 80%;
+  margin-right: 15%;
+}
+
+.configurator-view .costHolder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 3px solid skyblue;
+  border-radius: 5px;
+  height: 95%;
+  margin-right: 20px;
+}
+
+.configurator-view .totalCostTitle{
+  margin: 1%;
+  padding: 2px;
+  white-space: nowrap;
+}
+
+.configurator-view .totalCost{
+  margin-right: 8px;
+  padding: 2px;
+  white-space: nowrap;
+}
+
+.configurator-view .successIcon{
+  color: var(--lumo-success-color);
+}
+
+.configurator-view .errorIcon{
+  color: var(--lumo-error-color);
+}
+
+.configurator-view .icon {
+  color: var(--lumo-tertiary-text-color);
+  height: calc(var(--lumo-icon-size-s) * 0.8);
+  margin-right: var(--lumo-space-s);
+  width: calc(var(--lumo-icon-size-s) * 0.8);
+}
+
+.configurator-view .likes,
+.configurator-view .comments,
+.configurator-view .shares {
+  color: var(--lumo-tertiary-text-color);
+  font-size: var(--lumo-font-size-xs);
+  margin-right: var(--lumo-space-l);
+}
