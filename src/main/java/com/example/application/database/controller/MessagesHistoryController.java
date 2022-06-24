@@ -9,22 +9,22 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MessagesHistoryController {
 
-    private static DatabaseService databaseService;
+    private static DatabaseService<MessagesHistory> databaseService;
 
-    public MessagesHistoryController(@Qualifier("databaseServiceMessagesHistory") DatabaseService databaseService) {
+    public MessagesHistoryController(@Qualifier("messagesHistoryService") DatabaseService<MessagesHistory> databaseService) {
         MessagesHistoryController.databaseService = databaseService;
     }
 
-    public static MessagesHistory insert(MessagesHistory messagesHistory){
-        return (MessagesHistory) databaseService.insert(messagesHistory);
+    public static void insert(MessagesHistory messagesHistory){
+        databaseService.insert(messagesHistory);
     }
 
     public static MessagesHistory select(int id){
-        return (MessagesHistory) databaseService.select(id);
+        return databaseService.select(id);
     }
 
     public static MessagesHistory update(MessagesHistory userlogins, int id){
-        return (MessagesHistory) databaseService.update(userlogins, id);
+        return databaseService.update(userlogins, id);
     }
 
 }

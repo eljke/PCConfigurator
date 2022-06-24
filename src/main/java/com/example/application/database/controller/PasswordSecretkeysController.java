@@ -7,26 +7,26 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class PasswordSecretkeysController {
-    private static DatabaseService databaseService;
+    private static DatabaseService<PasswordSecretkeys> databaseService;
 
-    public PasswordSecretkeysController(@Qualifier("databaseServicePasswordSecretkeys") DatabaseService databaseService) {
+    public PasswordSecretkeysController(@Qualifier("passwordSecretkeysService") DatabaseService<PasswordSecretkeys> databaseService) {
         PasswordSecretkeysController.databaseService = databaseService;
     }
 
-    public static PasswordSecretkeys insert(PasswordSecretkeys passwordSecretkeys){
-        return (PasswordSecretkeys) databaseService.insert(passwordSecretkeys);
+    public static void insert(PasswordSecretkeys passwordSecretkeys){
+        databaseService.insert(passwordSecretkeys);
     }
 
     public static PasswordSecretkeys select(int id){
-        return (PasswordSecretkeys) databaseService.select(id);
+        return databaseService.select(id);
     }
 
     public static String selectEncodedSecretKeyByName(String name){
-        PasswordSecretkeys secretkey = (PasswordSecretkeys) databaseService.selectByName(name).get(0);
+        PasswordSecretkeys secretkey = databaseService.selectByName(name).get(0);
         return secretkey.getEncodedsecretkey();
     }
 
     public static PasswordSecretkeys update(PasswordSecretkeys userlogins, int id){
-        return (PasswordSecretkeys) databaseService.update(userlogins, id);
+        return databaseService.update(userlogins, id);
     }
 }

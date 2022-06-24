@@ -97,20 +97,19 @@ public class ChatView extends VerticalLayout {
                                 Bot bot = new Bot(BOT_TOKEN);
                                 bot.sendMessage(CHAT_ID, userInfo.getName(), sendField.getValue(), userInfo.getId());
 
-                                MessagesHistory messagesHistory = new MessagesHistory(userInfo.getName(), sendField.getValue());
+                                MessagesHistory messagesHistory = new MessagesHistory(
+                                        userInfo.getName(), sendField.getValue(), supportTab.getLabel());
                                 MessagesHistoryController.insert(messagesHistory);
                             } catch (IOException e) {
                                 e.printStackTrace();
-                            }
-                        } else if (generalTab.isSelected()) {
-                            MessagesHistory messagesHistory = new MessagesHistory(userInfo.getName(), sendField.getValue());
-                            try {
-                                MessagesHistoryController.insert(messagesHistory);
-                            } catch (Exception exception) {
-                                exception.printStackTrace();
                             } finally {
                                 sendField.clear();
                             }
+                        } else if (generalTab.isSelected()) {
+                            MessagesHistory messagesHistory = new MessagesHistory(
+                                    userInfo.getName(), sendField.getValue(), generalTab.getLabel());
+                            MessagesHistoryController.insert(messagesHistory);
+                            sendField.clear();
                         }
                     });
             return () -> {
@@ -290,9 +289,9 @@ public class ChatView extends VerticalLayout {
         });
 
         confirmInfoInputLogin.addClickListener(e -> {
-
             userName = inputUserNameLogin.getValue();
             password = passwordFieldLogin.getValue();
+
             try {
                 String encodedsecretkey = PasswordSecretkeysController.selectEncodedSecretKeyByName(userName);
 

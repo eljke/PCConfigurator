@@ -12,19 +12,22 @@ public class MessagesHistory {
     private Integer id;
     private String name;
     private String message;
+    private String tab;
 
     public MessagesHistory() {
     }
 
-    public MessagesHistory(String name, String message) {
+    public MessagesHistory(String name, String message, String tab) {
         this.name = name;
         this.message = message;
+        this.tab = tab;
     }
 
-    public MessagesHistory(Integer id, String name, String message) {
+    public MessagesHistory(Integer id, String name, String message, String tab) {
         this.id = id;
         this.name = name;
         this.message = message;
+        this.tab = tab;
     }
 
     public Integer getId() {
@@ -49,5 +52,13 @@ public class MessagesHistory {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public String getTab() {
+        return tab;
+    }
+
+    public void setTab(String tab) {
+        this.tab = tab;
     }
 }

@@ -16,8 +16,8 @@
     "@vaadin/bundles": "23.0.1",
     "@vaadin/button": "23.0.1",
     "@vaadin/charts": "23.0.1",
-    "@vaadin/checkbox": "23.0.1",
-    "@vaadin/checkbox-group": "23.0.1",
+    "@vaadin/checkbox": "23.1.1",
+    "@vaadin/checkbox-group": "23.1.1",
     "@vaadin/combo-box": "23.0.1",
     "@vaadin/common-frontend": "0.0.17",
     "@vaadin/component-base": "23.0.1",
@@ -71,7 +71,7 @@
     "@vaadin/vaadin-board": "23.0.1",
     "@vaadin/vaadin-button": "23.0.1",
     "@vaadin/vaadin-charts": "23.0.1",
-    "@vaadin/vaadin-checkbox": "23.0.1",
+    "@vaadin/vaadin-checkbox": "23.1.1",
     "@vaadin/vaadin-combo-box": "23.0.1",
     "@vaadin/vaadin-confirm-dialog": "23.0.1",
     "@vaadin/vaadin-context-menu": "23.0.1",
@@ -162,8 +162,8 @@
       "@vaadin/bundles": "23.0.1",
       "@vaadin/button": "23.0.1",
       "@vaadin/charts": "23.0.1",
-      "@vaadin/checkbox": "23.0.1",
-      "@vaadin/checkbox-group": "23.0.1",
+      "@vaadin/checkbox": "23.1.1",
+      "@vaadin/checkbox-group": "23.1.1",
       "@vaadin/combo-box": "23.0.1",
       "@vaadin/common-frontend": "0.0.17",
       "@vaadin/component-base": "23.0.1",
@@ -216,7 +216,7 @@
       "@vaadin/vaadin-board": "23.0.1",
       "@vaadin/vaadin-button": "23.0.1",
       "@vaadin/vaadin-charts": "23.0.1",
-      "@vaadin/vaadin-checkbox": "23.0.1",
+      "@vaadin/vaadin-checkbox": "23.1.1",
       "@vaadin/vaadin-combo-box": "23.0.1",
       "@vaadin/vaadin-confirm-dialog": "23.0.1",
       "@vaadin/vaadin-context-menu": "23.0.1",
@@ -287,7 +287,7 @@
       "workbox-precaching": "6.5.0",
       "workbox-webpack-plugin": "6.5.0"
     },
-    "hash": "87bee44427fb0d2bc2c69528f1b0c3d394a63bd26c0994cc6944deb0dda49388"
+    "hash": "5655c2f8b2aba4690730d5cd5043d3ed3be614086bebf797b84f758707f6a729"
   },
   "overrides": {
     "@vaadin/bundles": "$@vaadin/bundles",

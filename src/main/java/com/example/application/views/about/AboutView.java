@@ -1,11 +1,15 @@
 package com.example.application.views.about;
 
 import com.example.application.views.MainLayout;
+import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.html.*;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
+
+import java.io.IOException;
+import java.security.GeneralSecurityException;
 
 @PageTitle("О проекте")
 @Route(value = "about", layout = MainLayout.class)
@@ -15,29 +19,29 @@ public class AboutView extends VerticalLayout {
         setSpacing(false);
 
         add(new H2("Конфигуратор для сборки ПК"));
-        add(new Paragraph("Разработал в качестве курсовой работы студент ЯГТУ группы ЭПИ-21"));
 
-        Div infoOfDevelopers = new Div();
-        infoOfDevelopers.setClassName("info-of-developers");
-        infoOfDevelopers.setHeight("50px");
-        infoOfDevelopers.setText("Кузьменко Илья Максимович");
+        Anchor developer = new Anchor("https://t.me/eljke_ai", "Разработал @eljke_ai");
+        developer.setClassName("developer");
+        developer.setTarget("blank");
 
-        Anchor githubPage = new Anchor("https://github.com/eljke", "github.com/eljke");
+        add(developer);
+
+        Anchor githubPage = new Anchor("https://github.com/eljke/PCConfigurator", "Репозиторий проекта на GitHub");
         githubPage.setClassName("github-page");
         githubPage.setHeight("50px");
         githubPage.setTarget("blank");
 
-        add(infoOfDevelopers, githubPage);
+        add(githubPage);
 
-        HorizontalLayout pepeHolder = new HorizontalLayout();
-        pepeHolder.setClassName("pepe-holder");
+        HorizontalLayout kittenHolder = new HorizontalLayout();
+        kittenHolder.setClassName("kitten-holder");
 
-        Image pepe1 = new Image("images/pepe-clown.gif", "clown");
-        pepe1.setWidth("250px");
+        Image cuteKitten = new Image("images/cuteKitten.gif", "Cute Kitten");
+        cuteKitten.setWidth("350px");
 
-        pepeHolder.add(pepe1);
+        kittenHolder.add(cuteKitten);
 
-        add(pepeHolder);
+        add(kittenHolder);
 
         Footer footer = new Footer();
         footer.addClassName("footer");

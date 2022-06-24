@@ -2,19 +2,19 @@ package com.example.application.database.service;
 
 import java.util.List;
 
-public interface DatabaseService {
+public interface DatabaseService <T> {
 
-    Object insert(Object object);
+    T insert(T object);
 
-    List<Object> selectAll();
+    List<T> selectAll();
 
-    Object select(int id);
+    T select(int id);
 
-    List<Object> selectByName(String name);
+    List<T> selectByName(String name);
 
     boolean isPresent(String name);
 
-    Object update(Object object, int id);
+    T update(T object, int id);
 
     void delete(int id);
 
